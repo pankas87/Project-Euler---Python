@@ -12,6 +12,8 @@ while not is_divisible_by_list(i, numbers):
   # Only multiples of 10 will be divisible by 10, test less numbers and calculate faster
   i += 10
   
+  # Print is an async operation with too much latency 
+    # only print the control message when i is a multiple of 10 million
   if( i % 10000000 ) == 0:
     print( 'Testing', i )
 
