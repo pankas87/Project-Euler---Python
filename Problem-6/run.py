@@ -1,14 +1,8 @@
-sum         = 0
-sum_squares = 0
-sum_squared = 0
-
-for val in range(1,101):
-  sum         += val
-  sum_squares += val * val
-
-sum_squared = sum * sum
+edge        = 100
+sum         = edge * (edge + 1) / 2
+sum_squares = (2 * edge + 1) * (edge + 1) * edge / 6
 
 print('sum', sum)
-print('sum_squared', sum_squared)
+print('sum_squared', sum * sum)
 print('sum_squares', sum_squares)
-print('sum_squared - sum_squares', sum_squared - sum_squares )
+print('sum_squared - sum_squares', sum * sum - sum_squares )
